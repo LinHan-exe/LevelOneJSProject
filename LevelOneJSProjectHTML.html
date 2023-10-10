@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <script src="LevelOneJSProjectJavascript.js" async></script>
+</head>
+<body>
+    <h1>Calorie Counter</h1>
+
+    <div id="appetizer">
+        <h2>Appetizer</h2>
+        <button onclick="changeValue('appetizer', 'protein', 1)">+1 Protein</button>
+        <button onclick="changeValue('appetizer', 'protein', -1)">-1 Protein</button>
+        <span>Proteins: <span id="appetizer-protein">0</span>g</span>
+        <button onclick="changeValue('appetizer', 'carbs', 1)">+1 Carbs</button>
+        <button onclick="changeValue('appetizer', 'carbs', -1)">-1 Carbs</button>
+        <span>Carbs: <span id="appetizer-carbs">0</span>g</span>
+        <button onclick="changeValue('appetizer', 'fat', 1)">+1 Fat</button>
+        <button onclick="changeValue('appetizer', 'fat', -1)">-1 Fat</button>
+        <span>Fat: <span id="appetizer-fat">0</span>g</span>
+        <span>Calories: <span id="appetizer-calories">0</span></span>
+        <button onclick="resetFood('appetizer')">Reset</button>
+    </div>
+
+
+    <div id="entree">
+        <h2>Entree</h2>
+        <button onclick="changeValue('entree', 'protein', 1)">+1 Protein</button>
+        <button onclick="changeValue('entree', 'protein', -1)">-1 Protein</button>
+        <span>Proteins: <span id="entree-protein">0</span>g</span>
+        <button onclick="changeValue('entree', 'carbs', 1)">+1 Carbs</button>
+        <button onclick="changeValue('entree', 'carbs', -1)">-1 Carbs</button>
+        <span>Carbs: <span id="entree-carbs">0</span>g</span>
+        <button onclick="changeValue('entree', 'fat', 1)">+1 Fat</button>
+        <button onclick="changeValue('entree', 'fat', -1)">-1 Fat</button>
+        <span>Fat: <span id="entree-fat">0</span>g</span>
+        <span>Calories: <span id="entree">0</span></span>
+        <button onclick="resetFood('entree')">Reset</button>
+    </div>
+
+    <div id="dessert">
+        <h2>Dessert</h2>
+        <button onclick="changeValue('dessert', 'protein', 1)">+1 Protein</button>
+        <button onclick="changeValue('dessert', 'protein', -1)">-1 Protein</button>
+        <span>Proteins: <span id="dessert-protein">0</span>g</span>
+        <button onclick="changeValue('dessert', 'carbs', 1)">+1 Carbs</button>
+        <button onclick="changeValue('dessert', 'carbs', -1)">-1 Carbs</button>
+        <span>Carbs: <span id="dessert-carbs">0</span>g</span>
+        <button onclick="changeValue('dessert', 'fat', 1)">+1 Fat</button>
+        <button onclick="changeValue('dessert', 'fat', -1)">-1 Fat</button>
+        <span>Fat: <span id="dessert-fat">0</span>g</span>
+        <span>Calories: <span id="dessert-calories">0</span></span>
+        <button onclick="resetFood('dessert')">Reset</button>
+    </div>
+
+    <div id="total-calories">
+        <h2>Total Calories</h2>
+        <span>Total: <span id="total-calories-value">0</span></span>
+        <button onclick="resetAll()">Reset All</button>
+    </div>
+</body>
+</html>
